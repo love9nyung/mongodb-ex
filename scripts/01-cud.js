@@ -19,7 +19,7 @@ function testConnect() {
         }
     })
 }
-testConnect();
+// testConnect();
 
 //  insertOne, insertMany
 function testInsertDocument(docs) {
@@ -56,7 +56,7 @@ function testInsertDocument(docs) {
         });
     }
 }
-testInsertDocument( { name: "전우치", job: "도사" });
+// testInsertDocument( { name: "전우치", job: "도사" });
 testInsertDocument([
     {name: "고길동", gender: "남성", species: "인간", age: 50},
     {name: "둘리", gender: "남성", species: "공룡", age: 100000000},
@@ -66,18 +66,18 @@ testInsertDocument([
     {name: "봉미선", gender: "여성", species: "인간", age: 35}
 ]); //  문서의 배열 -> insertMany
 
-// function testDeleteAll() {
-//     //  db.collection.delete()  : 전체 삭제
-//     //  SQL: DELETE FROM table;
-//     //  Promise 방식
-//     client.connect().then(client => {
-//         const db = client.db("mydb");
-//         db.collection('friends').deleteMany({})
-//             .then(result => {
-//                 console.log(result.deletedCount, "개의 문서가 삭제");
-//             });
-//     }).catch(err => {
-//         console.error(err);
-//     });
-// }
+function testDeleteAll() {
+    //  db.collection.delete()  : 전체 삭제
+    //  SQL: DELETE FROM table;
+    //  Promise 방식
+    client.connect().then(client => {
+        const db = client.db("mydb");
+        db.collection('friends').deleteMany({})
+            .then(result => {
+                console.log(result.deletedCount, "개의 문서가 삭제");
+            });
+    }).catch(err => {
+        console.error(err);
+    });
+}
 // testDeleteAll();
