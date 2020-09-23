@@ -1,0 +1,23 @@
+{
+  "name": "mongodb-ex",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "mongodb": "^3.6.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/love9nyung/jsbasic.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/love9nyung/jsbasic/issues"
+  },
+  "homepage": "https://github.com/love9nyung/jsbasic#readme",
+  "description": ""
+}
